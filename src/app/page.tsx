@@ -1,5 +1,5 @@
-import { Box, Container } from "@mui/material";
-import { Search } from "../components/Search";
+import { Container } from "@mui/material";
+import { Search } from "./Search";
 
 export default function HomePage() {
   return (
