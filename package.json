@@ -23,6 +23,7 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
@@ -30,6 +31,7 @@
     "eslint-config-next": "latest",
     "jest": "^29.6.1",
     "jest-environment-jsdom": "^29.6.1",
+    "next-router-mock": "^0.9.7",
     "typescript": "latest"
   }
 }

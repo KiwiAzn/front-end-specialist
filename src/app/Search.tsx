@@ -17,7 +17,7 @@ export const Search = () => {
       <TextField
         id="search"
         variant="outlined"
-        placeholder="Search movies, TV shows, people and more"
+        placeholder="Search for movies, TV shows or people"
         fullWidth
         InputProps={{
           startAdornment: (
