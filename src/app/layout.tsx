@@ -9,8 +9,8 @@ import ThemeRegistry from "@/components/ThemeRegistry/ThemeRegistry";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Next.js App Router + Material UI v5",
-  description: "Next.js App Router + Material UI v5",
+  title: "Dionysus",
+  description: "Search movies, tv shows, people",
 };
 
 const roboto = Roboto({

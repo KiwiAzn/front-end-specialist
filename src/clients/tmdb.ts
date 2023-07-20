@@ -21,7 +21,7 @@ interface PersonResult {
   known_for_department: string;
   name: string;
   original_name: string;
-  popularity: string;
+  popularity: number;
   profile_path: string;
   known_for: Array<MovieResult | TVResult>;
 }
@@ -40,7 +40,7 @@ interface TVResult {
   first_air_date: string;
   name: string;
   vote_average: number;
-  cote_count: number;
+  vote_count: number;
 }
 
 interface SearchMultiData {

@@ -1,6 +1,6 @@
 {
-  "name": "material-next-app-router-ts",
-  "version": "5.0.0",
+  "name": "dionysus",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
