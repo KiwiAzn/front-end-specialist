@@ -47,11 +47,11 @@ export const SearchResultItem = async ({
   });
 
   return (
-    <Card variant="outlined">
+    <Card variant="outlined" sx={{ borderRadius: 2 }}>
       <CardHeader
-        title={<Typography variant="h4">{title}</Typography>}
+        title={<Typography variant="h5">{title}</Typography>}
         subheader={
-          <Typography variant="caption">
+          <Typography variant="body2" color="text.secondary">
             {new Date(release_date).toLocaleDateString()}
           </Typography>
         }
@@ -60,7 +60,12 @@ export const SearchResultItem = async ({
         }}
         avatar={
           <Box sx={{ position: "relative", display: "inline-flex" }}>
-            <CircularProgress variant="determinate" value={vote_average * 10} />
+            <CircularProgress
+              variant="determinate"
+              value={vote_average * 10}
+              color="primary"
+              thickness={4}
+            />
             <Box
               sx={{
                 top: 0,
@@ -73,7 +78,7 @@ export const SearchResultItem = async ({
                 justifyContent: "center",
               }}
             >
-              <Typography variant="caption" component="div">
+              <Typography variant="caption" fontWeight={600} component="div">
                 {vote_average.toFixed(1)}
               </Typography>
             </Box>
@@ -92,7 +97,7 @@ export const SearchResultItem = async ({
           >
             {genreNames.map((genreName) => (
               <Typography
-                variant="caption"
+                variant="body2"
                 component="div"
                 color="text.secondary"
               >

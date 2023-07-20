@@ -19,6 +19,12 @@ When you are done, please submit the URL to your Github repo back to us.
 
 - Please head over to read the [instructions](INSTRUCTIONS.md)
 - Also consider the [context](CONTEXT.md) file we have provided for your notes
+- Familiarise yourself with the [Figma design file](https://www.figma.com/file/hGMcwa4NCwkUYvdfUtPueK/FE-Interview---Movie-results-page?type=design&node-id=6%3A2634&mode=dev) that shows the desired outcome
+  - We have added preview screenshots to this repository but the Figma design file is the source of truth and contains all values, like colours or padding, needed to build the components
+  - [Expected search results page](./screenshots/movie-results-card.png)
+  - [Movie result card](./screenshots/movie-results-card.png)
+  - [TV show result card](./screenshots/tv-show-results-card.png)
+  - [People result card](./screenshots/people-results-card.png)
 
 ## How to get running
 

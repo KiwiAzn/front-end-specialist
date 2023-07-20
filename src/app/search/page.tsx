@@ -17,7 +17,7 @@ export default async function StarredPage({
     searchParams.page as string
   );
   return (
-    <Container>
+    <Container maxWidth="md">
       <TotalSearchResults searchParams={searchParams} />
       <Stack direction="column" spacing={4} my={4}>
         {results.map((result) => (

@@ -5,9 +5,10 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import MuiLink from "@mui/material/Link";
-import MovieIcon from "@mui/icons-material/Movie";
+import LocalMovies from "@mui/icons-material/LocalMovies";
 import ThemeRegistry from "@/components/ThemeRegistry/ThemeRegistry";
 import Link from "next/link";
+import { grey } from "@mui/material/colors";
 
 export const metadata = {
   title: "Dionysus",
@@ -30,8 +31,13 @@ export default function RootLayout({
         <ThemeRegistry>
           <AppBar position="fixed" sx={{ zIndex: 2000 }}>
             <Toolbar>
-              <MovieIcon sx={{ mr: 2 }} />{" "}
-              <Typography variant="h6" noWrap>
+              <LocalMovies sx={{ mr: 1, width: 32, height: 32 }} />
+              <Typography
+                variant="h4"
+                noWrap
+                fontWeight={700}
+                sx={{ textTransform: "uppercase" }}
+              >
                 <Link href="/" passHref legacyBehavior>
                   <MuiLink color="inherit" underline="none">
                     Dionysus
@@ -44,7 +50,6 @@ export default function RootLayout({
             component="main"
             sx={{
               flexGrow: 1,
-              bgcolor: "background.default",
               mt: ["48px", "56px", "64px"],
               p: 3,
             }}
