@@ -70,3 +70,48 @@ export const searchMulti = async (
 
   return response.json() as Promise<SearchMultiData>;
 };
+
+interface Genre {
+  id: number;
+  name: string;
+}
+
+interface GenresData {
+  genres: Array<Genre>;
+}
+
+export const movieGenres = async (): Promise<GenresData> => {
+  const url = "https://api.themoviedb.org/3/genre/movie/list";
+  const options = {
+    method: "GET",
+    headers: {
+      accept: "application/json",
+      Authorization: `Bearer ${process.env.TMDB_AUTH}`,
+    },
+  };
+  const response = await fetch(url, options);
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch data");
+  }
+
+  return response.json() as Promise<GenresData>;
+};
+
+export const tvGenres = async (): Promise<GenresData> => {
+  const url = "https://api.themoviedb.org/3/genre/tv/list";
+  const options = {
+    method: "GET",
+    headers: {
+      accept: "application/json",
+      Authorization: `Bearer ${process.env.TMDB_AUTH}`,
+    },
+  };
+  const response = await fetch(url, options);
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch data");
+  }
+
+  return response.json() as Promise<GenresData>;
+};

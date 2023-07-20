@@ -4,7 +4,8 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import DashboardIcon from "@mui/icons-material/Dashboard";
+import MuiLink from "@mui/material/Link";
+import MovieIcon from "@mui/icons-material/Movie";
 import ThemeRegistry from "@/components/ThemeRegistry/ThemeRegistry";
 import Link from "next/link";
 
@@ -28,15 +29,15 @@ export default function RootLayout({
       <body className={roboto.className}>
         <ThemeRegistry>
           <AppBar position="fixed" sx={{ zIndex: 2000 }}>
-            <Toolbar sx={{ backgroundColor: "background.paper" }}>
-              <DashboardIcon
-                sx={{ color: "#444", mr: 2, transform: "translateY(-2px)" }}
-              />
-              <Link href="/" style={{ textDecoration: "none" }}>
-                <Typography variant="h6" noWrap component="div" color="black">
-                  Dionysus
-                </Typography>
-              </Link>
+            <Toolbar>
+              <MovieIcon sx={{ mr: 2 }} />{" "}
+              <Typography variant="h6" noWrap>
+                <Link href="/" passHref legacyBehavior>
+                  <MuiLink color="inherit" underline="none">
+                    Dionysus
+                  </MuiLink>
+                </Link>
+              </Typography>
             </Toolbar>
           </AppBar>
           <Box
