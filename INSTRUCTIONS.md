@@ -22,7 +22,7 @@ We also would like you to think of ways to improve the repo, as we would like to
   - Overview
   - First air date
   - Vote average
-  - Vote count
+  - Genres
 - People results contain the following information:
   - Name
   - What department they are known for such as directing, acting or special effects
