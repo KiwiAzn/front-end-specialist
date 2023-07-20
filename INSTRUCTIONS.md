@@ -2,7 +2,7 @@
 
 An engineer has put together a search engine for movies, tv shows and people involved in the entertainment industry. They have partially implemented the search results page. The search results page only displays movies. The other search result types are displayed with an error message.
 
-Your task is to create components for the TV show and people search results and interleave it with the existing movie search results.
+Your task is to create components for the TV show and people search results and combine it with the existing movie search results.
 
 The endpoint that is used for searching returns movies, tv shows and people in a single response. The other search result types are defined in the [src/clients/tmdb.ts](src/clients/tmdb.ts) file as interfaces.
 
