@@ -6,7 +6,7 @@ Your task is to create components for the TV show and people search results and 
 
 The endpoint that is used for searching returns movies, tv shows and people in a single response. The other search result types are defined in the [src/clients/tmdb.ts](src/clients/tmdb.ts) file as interfaces.
 
-We also would like you to think of ways to improve the repo, as we would like scale this repo out to multiple teams.
+We also would like you to think of ways to improve the repo, as we would like to scale this repo out to multiple teams.
 
 ## Getting started
 
@@ -34,3 +34,7 @@ We also would like you to think of ways to improve the repo, as we would like sc
   - We are not counting familiarising yourself with the technologies as a part of those two hours
   - If you do run out of time, update the `CONTEXT.md` with a high level overview of what you have done
 - You are allowed to install additional third-party packages for your solution. If you do install additional third party packages please add a short description in the `CONTEXT.md` file on _why_ you have chosen that library over others
+
+## Known issues
+
+There is a known issue with `prop-types` throwing warnings for `children` not being a `ReactNode` for a few MUI components. Feel free to ignore this.
