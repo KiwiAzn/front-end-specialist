@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { Search } from "@/app/Search";
+import { Search } from "@/app/search/Search";
 import mockRouter from "next-router-mock";
 
 describe("Search", () => {

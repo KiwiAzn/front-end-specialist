@@ -18,6 +18,13 @@ new ones.
 
 ---
 
-### Approach to solution
+### TODO in the next step
 
-### Testing
+- `package.json` lock engine and dependency version
+- Add unit test and E2E test
+- Fix TypeScript errors in dev
+- Reconsider if the folder named `clients` structure makes sense
+- Add `.eslintrc.json`
+- Add `.prettierrc`
+- Add `CI/CD` workflow to run test and lint commands
+- Add `Bearer CLI` into workflow to scan static files to keep privacy and security

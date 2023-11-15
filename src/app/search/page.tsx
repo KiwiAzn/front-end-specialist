@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import { searchMulti } from "@/clients/tmdb";
 import { TotalSearchResults } from "./TotalSearchResults";
 import { SearchResultsPaginationServer } from "./SearchResultsPagination.server";
-import { SearchResults } from "./SearchResults/SearchResults";
+import { SearchResults } from "./result/SearchResults";
 import { Stack } from "@mui/material";
 
 export default async function StarredPage({
