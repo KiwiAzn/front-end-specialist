@@ -1,4 +1,4 @@
-export interface MovieResult {
+interface MovieResult {
   media_type: "movie";
   backdrop_path: string;
   id: number;
@@ -14,7 +14,7 @@ export interface MovieResult {
   vote_count: number;
 }
 
-export interface PersonResult {
+interface PersonResult {
   media_type: "person";
   gender: number;
   id: number;
@@ -26,7 +26,7 @@ export interface PersonResult {
   known_for: Array<MovieResult | TVResult>;
 }
 
-export interface TVResult {
+interface TVResult {
   media_type: "tv";
   backdrop_path: string;
   genre_ids: Array<number>;
