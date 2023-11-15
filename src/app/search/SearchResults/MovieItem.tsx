@@ -1,15 +1,16 @@
-import { Context, useContext } from "react";
-import { MovieResult, movieGenres } from "@/clients/tmdb";
+import { movieGenres } from "@/clients/tmdb";
 import { Card, CardContent, Chip, Stack } from "@mui/material";
 import { GenreDivider } from "./components/GenreDivider";
 import { HeaderWithVoting } from "./components/HeaderWithVoting";
-import { SearchResultContext } from "../page";
+import { MovieItemType } from "./types";
 
-export const MovieItem = async () => {
-  const { genre_ids, title, release_date, vote_average, overview } = useContext(
-    SearchResultContext as Context<MovieResult>
-  );
-
+export const MovieItem = async ({
+  genre_ids,
+  title,
+  release_date,
+  vote_average,
+  overview,
+}: MovieItemType) => {
   const { genres } = await movieGenres();
   const genreNames = genre_ids.map(
     (genreId) => (genres.find(({ id }) => id === genreId) || {}).name || ""

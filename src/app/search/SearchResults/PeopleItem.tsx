@@ -1,13 +1,11 @@
-import { PersonResult } from "@/clients/tmdb";
 import { Card, CardContent, CardHeader, Chip, Typography } from "@mui/material";
-import { Context, useContext } from "react";
-import { SearchResultContext } from "../page";
+import { PeopleItemType } from "./types";
 
-export const PeopleItem = async () => {
-  const { name, known_for_department, known_for } = useContext(
-    SearchResultContext as Context<PersonResult>
-  );
-
+export const PeopleItem = async ({
+  name,
+  known_for_department,
+  known_for,
+}: PeopleItemType) => {
   return (
     <Card variant="outlined" sx={{ borderRadius: 2 }}>
       <CardHeader
